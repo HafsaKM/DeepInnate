@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DeepInnate</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Segoe UI', sans-serif;
+      scroll-behavior: smooth;
+      background: #0a0a0a;
+      color: #85C086;
+    }
+
+    /* Grid Layer */
+    .grid-layer {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 200%;
+      height: 200%;
+      background-image: 
+        linear-gradient(90deg, rgba(133, 192, 134, 0.07) 1px, transparent 1px),
+        linear-gradient(rgba(133, 192, 134, 0.07) 1px, transparent 1px);
+      background-size: 40px 40px;
+      animation: moveGrid 20s linear infinite;
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    @keyframes moveGrid {
+      0% { transform: translate(0, 0); }
+      100% { transform: translate(-40px, -40px); }
+    }
+
+    /* Glow Layer */
+    .glow-layer {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(circle at center, rgba(133, 192, 134, 0.12), transparent 60%);
+      z-index: 1;
+      pointer-events: none;
+    }
+
+    section {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      padding: 3rem;
+      position: relative;
+      z-index: 2;
+    }
+
+    h1 {
+      font-size: 4rem;
+      text-shadow: 0 0 15px #85C086;
+      margin: 0;
+      max-width: 90vw;
+    }
+
+    .slide1 img,
+    .slide4 img {
+      max-height: 65vh;
+      max-width: 90vw;
+      margin-top: 2rem;
+      border-radius: 10px;
+      border: 2px solid #85C086;
+      box-shadow: 0 0 25px #85C086;
+    }
+
+    .slide2 {
+      background-image: url('OneDrive - Imperial College London/abstract-green-futuristic-wave-grid-digital-technology-3d-block-network-grid-made-by-wave-virtual-matrix-seamless-loop-free-video.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .slide2 h1 {
+      background-color: rgba(10,10,10,0.6);
+      padding: 2rem;
+      border-radius: 12px;
+    }
+
+    .slide4 {
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 3rem;
+    }
+
+    .slide4 p {
+      max-width: 600px;
+      font-size: 1.6rem;
+      line-height: 1.7;
+      text-align: left;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2.5rem;
+      }
+
+      .slide4 {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .slide4 p {
+        text-align: center;
+        font-size: 1.3rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Background Grid and Glow -->
+  <div class="grid-layer"></div>
+  <div class="glow-layer"></div>
+
+  <!-- Slide 1 -->
+  <section class="slide1">
+    <h1>From cellular chaos,</h1>
+    <img src="C:\Users\hafsa\Downloads\Adobe Express - file.png" alt="Messy Cell Image"/>
+  </section>
+
+  <!-- Slide 2 -->
+  <section class="slide2">
+    <h1>we decode the logic of immunology</h1>
+  </section>
+
+  <!-- Slide 3 -->
+  <section class="slide3">
+    <h1>to design smarter, next-generation cell therapies</h1>
+  </section>
+
+  <!-- Slide 4 -->
+<section class="slide4">
+  <img src="C:\Users\hafsa\OneDrive - Imperial College London\DI.png" alt="DeepInnate Logo"/>
+  <p>
+    <strong>🌱 AI-native discovery for next-generation immune cell therapies.</strong><br/><br/>    
+    Current cell therapies are expensive, ineffective in solid tumors, and offer no solutions for autoimmune or infectious diseases. We’re changing that. DeepInnate uses single-cell omics, time-series data, and AI to design potent innate immune cells from scratch — starting with stem cells, not guesswork. While others repackage tired cells, we engineer the future of immunity: scalable, allogeneic, and precisely tailored.
+  </p>
+</section>
+
+<!-- Contact info positioned cleanly below -->
+<div style="text-align: center; font-size: 1.2rem; margin-top: -2rem; padding-bottom: 3rem; position: relative; z-index: 2;">
+  📬 Contact us: <a href="mailto:h.kaja-moinudeen23@imperial.ac.uk" style="color: #85C086; text-decoration: underline;">h.kaja-moinudeen23@imperial.ac.uk</a>
+</div>
+
+
+</body>
+</html>
